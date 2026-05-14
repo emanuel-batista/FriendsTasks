@@ -79,5 +79,6 @@ Base URL: `http://localhost:8080/api`
 
 ## Autores
 
-- **Manu Batista** — App Flutter
+- **Emanuel Silva** — App Flutter
 - **Otávio Chile** — API REST
+- **Paulo Martins** — Revisão e documentação
