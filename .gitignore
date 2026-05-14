@@ -1,6 +1,16 @@
-#ignore zip
+# zip
 *.zip
 
-#ignore mac system files
+# mac
 .DS_Store
+
+# Java / Maven
+target/
+*.class
+
+# Flutter
+friends_tasks/.dart_tool/
+friends_tasks/build/
+friends_tasks/.flutter-plugins
+friends_tasks/.flutter-plugins-dependencies
 

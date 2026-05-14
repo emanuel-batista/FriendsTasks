@@ -19,6 +19,9 @@ public class TarefaService {
     private UsuarioRepository usuarioRepository;
 
     public Tarefa criarTarefa(Tarefa tarefa) {
+        Usuario dono = usuarioRepository.findById(tarefa.getDono().getId())
+                .orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
+        tarefa.setDono(dono);
         tarefa.setStatus("PENDENTE");
         return tarefaRepository.save(tarefa);
     }
